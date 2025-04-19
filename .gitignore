@@ -1,0 +1,8 @@
+/build/
+/sim/*.vcd
+/sim/*.out
+*.log
+*.asc
+*.bin
+*.json
+*.svg

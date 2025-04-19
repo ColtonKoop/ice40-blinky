@@ -1,0 +1,10 @@
+# scripts/synth-debug.ys
+read_verilog ../src/*.v
+hierarchy -top blinky
+proc; opt
+techmap; opt
+stat
+write_verilog ../build/blinky_synth.v
+write_json ../build/blinky.json
+write_rtlil ../build/blinky.il
+show -colors 1 -stretch
